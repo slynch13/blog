@@ -22,43 +22,43 @@ I decide to make a simple API that I could use to inside of programs, so I can m
 My first attempt went something like: </p> 
 
 > <pre class="csharpcode">//The installer has a start method
-interface IInstaller{void Start();} 
-public IInstaller Bind()
-{
-	Assembly assembly = Assembly.LoadFile("&lt;Path&gt;");
-	Type type = assembly.GetType("namespace.frm");
-	ConstructorInfo constructorInfo = type.GetConstructor(new Type[]{});
-	IInstaller installer = (IInstaller)constructorInfo.Invoke(new object[]{});
-}
-</pre>
+>interface IInstaller{void Start();} 
+>public IInstaller Bind()
+>{
+>	Assembly assembly = Assembly.LoadFile("&lt;Path&gt;");
+>	Type type = assembly.GetType("namespace.frm");
+>	ConstructorInfo constructorInfo = type.GetConstructor(new Type[]{});
+>	IInstaller installer = (IInstaller)constructorInfo.Invoke(new object[]{});
+>}
+></pre>
 
 That didnt work so well, since while namespace.frm object had a Start method, it wasn&#8217;t from that interface, and shared no assemblies in common that I could use an interface from. In the end I decided to make a wrapper class that would take the object and make use a delegate to keep a reference to the Start method.
 
 Something close to this: 
-
+>
 > <pre class="csharpcode">public interface IInstaller{void Start();}
-public class InstallerWrapper:IInstaller
-{
-	private delegate void StartMethod();
-	StartMethod startDelegate;
-	object _installer;
-	public InstallerWrapper(object installer)
-	{
-		_installer = installer;
-		startDelegate = (StartMethod)Delegate.CreateDelegate(typeof(StartMethod), installer, "Start");
-	}
-	public void Start()
-	{
-		startDelegate();	
-	}	
-}
-public IInstaller Bind()
-{
-	Assembly assembly = Assembly.LoadFile("&lt;Path&gt;");
-	Type type = assembly.GetType("namespace.frm");
-	ConstructorInfo constructorInfo = type.GetConstructor(new Type[]{});
-	return new InstallerWrapper(constructorInfo.Invoke(new object[]{}));
-}
+>public class InstallerWrapper:IInstaller
+>{
+>	private delegate void StartMethod();
+>	StartMethod startDelegate;
+>	object _installer;
+>	public InstallerWrapper(object installer)
+>	{
+>		_installer = installer;
+>		startDelegate = (StartMethod)Delegate.CreateDelegate(typeof(StartMethod), installer, >"Start");
+>	}
+>	public void Start()
+>	{
+>		startDelegate();	
+>	}	
+>}
+>public IInstaller Bind()
+>{
+>	Assembly assembly = Assembly.LoadFile("&lt;Path&gt;");
+>	Type type = assembly.GetType("namespace.frm");
+>	ConstructorInfo constructorInfo = type.GetConstructor(new Type[]{});
+>	return new InstallerWrapper(constructorInfo.Invoke(new object[]{}));
+>}
 </pre>
 
 Thinking about what I have read about the implementation of it in C# 3.0 I would likely have needed to do it this way anyways, since atleast from what I have read it is a compile time feature. Haven&#8217;t tested it yet on my VS 2008 beta VM yet though, so I could be wrong. 

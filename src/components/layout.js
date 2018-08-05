@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+require("prismjs/themes/prism-solarizedlight.css");
 import { rhythm, scale } from '../utils/typography'
 
 class Template extends React.Component {

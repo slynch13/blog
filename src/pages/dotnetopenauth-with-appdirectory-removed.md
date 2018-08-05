@@ -26,7 +26,7 @@ The problem that came from this setup was that DotNetOpenAuth determined that th
 
 The first is making the request:
   
-<pre class="code">
+<pre class="gatsby-highlight"><code>
 if (isInSubDir)
 {
 request = openid.CreateRequest(Request.Form["openid_identifier"], new Realm("http://webquestbuilder.com/"),
@@ -52,9 +52,9 @@ absoluteUri = absoluteUri.Replace(Request.ApplicationPath, "");
 rawUrl = rawUrl.Replace(Request.ApplicationPath, "");
 }
 var httpRequestInfo = new HttpRequestInfo(httpRequest.HttpMethod, new Uri(absoluteUri), rawUrl, headers, httpRequest.InputStream);
-response = openid.GetResponse(httpRequestInfo); �
+response = openid.GetResponse(httpRequestInfo);
 }
 else
 {
 response = openid.GetResponse();
-}</pre>
+}</code></pre>
