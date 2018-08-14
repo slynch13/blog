@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sean's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 14 Aug 2018 03:27:53 GMT</lastBuildDate><item><title><![CDATA[Gatsby Blog - Getting Started]]></title><description><![CDATA[So I decided to move from WordPress to a static site I went with  Gatsby  as my generator, because I have been working to learn both React…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//gatsby/gatsby-blog-getting-started/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//gatsby/gatsby-blog-getting-started/</guid><pubDate>Fri, 03 Aug 2018 00:34:55 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;So I decided to move from WordPress to a static site&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I went with &lt;a href=&quot;http://gatsbyjs.com&quot;&gt;Gatsby&lt;/a&gt; as my generator, because I have been working to learn both React and Gatsby.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Generics Primer - Part 1]]></title><description><![CDATA[When generics were first released, the generic collections where the first place that I used them. They removed a lot of the boilerplate…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//generics-primer-part-1/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//generics-primer-part-1/</guid><pubDate>Thu, 02 Jan 2014 10:15:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;When generics were first released, the generic collections where the first place that I used them. They removed a lot of the boilerplate code when it came to creating strongly typed collections. In 1.x you would inherit from the base class of the type of collection you wanted, and then implement strongly typed versions of methods such as Add, Remove, Contains.&lt;/span&gt; &lt;a style=&quot;font-size: 13px;&quot; title=&quot;An example of that can be found here.&quot; href=&quot;http://msdn.microsoft.com/en-US/library/system.collections.dictionarybase(v=vs.80).aspx&quot; target=&quot;_blank&quot;&gt;An example of this can be found here.&lt;/a&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt; Thanks to generics you don’t need to create a MyClass1List and a MyClass2List you can simply instantiate a new List&lt;MyClass1&gt;() and new List&lt;MyClass2&gt; without needing to write the plumbing code to have this work.&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;oembed-gist&quot;&gt;
+  &lt;noscript&gt;
+    View the code on &lt;a href=&quot;https://gist.github.com/8192633&quot;&gt;Gist&lt;/a&gt;.
+  &lt;/noscript&gt;
+&lt;/div&gt;
+&lt;p&gt;When .Net 3.5 was released it included one of my favorite features in .Net, LINQ which is a set of extension methods that make extensive use of generics, allowing for removal of much of the boilerplate involved with searching collections.&lt;/p&gt;
+&lt;div class=&quot;oembed-gist&quot;&gt;
+  &lt;noscript&gt;
+    View the code on &lt;a href=&quot;https://gist.github.com/8192749&quot;&gt;Gist&lt;/a&gt;.
+  &lt;/noscript&gt;
+&lt;/div&gt;
+&lt;p&gt;In my next post I will talk about creating some simple generic classes and methods.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Getting imports working with dotless and CssBundles]]></title><description><![CDATA[I was watching  Single Page Apps with HTML5, Web API, Knockout and jQuery  by John Papa on pluralsight and one of the pieces was sending…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//getting-imports-working-with-dotless-and-cssbundles/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//getting-imports-working-with-dotless-and-cssbundles/</guid><pubDate>Tue, 11 Sep 2012 21:27:22 GMT</pubDate><content:encoded>&lt;p&gt;I was watching &lt;a href=&quot;http://pluralsight.com/training/Courses/TableOfContents/spa&quot;&gt;Single Page Apps with HTML5, Web API, Knockout and jQuery&lt;/a&gt; by John Papa on pluralsight and one of the pieces was sending compiled less files down using the bundling.&lt;/p&gt;
+&lt;div class=&quot;oembed-gist&quot;&gt;
+  &lt;noscript&gt;
+    View the code on &lt;a href=&quot;https://gist.github.com/3703799&quot;&gt;Gist&lt;/a&gt;.
+  &lt;/noscript&gt;
+&lt;/div&gt;
+&lt;p&gt;Unfortunately this did not work while using @import because the current directory was set to my IIS Express directory. After searching most suggestions were to use Directory.SetCurrentDirectory but didn’t really like that solution so this is what I decided on:&lt;/p&gt;
+&lt;div class=&quot;oembed-gist&quot;&gt;
+  &lt;noscript&gt;
+    View the code on &lt;a href=&quot;https://gist.github.com/3689144&quot;&gt;Gist&lt;/a&gt;.
+  &lt;/noscript&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Migrating to WordPress with URL Rewriting]]></title><description><![CDATA[Recently I switched from using  SubText  to  WordPress  as my blog engine. The reason for the switch was to get access to all of the plug…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//migrating-to-wordpress-with-url-rewriting/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//migrating-to-wordpress-with-url-rewriting/</guid><pubDate>Sat, 13 Mar 2010 23:38:29 GMT</pubDate><content:encoded>&lt;p&gt;Recently I switched from using &lt;a title=&quot;SubText&quot; href=&quot;http://subtextproject.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SubText&lt;/a&gt; to &lt;a class=&quot;zem_slink&quot; title=&quot;WordPress&quot; href=&quot;http://wordpress.org&quot; rel=&quot;homepage&quot;&gt;WordPress&lt;/a&gt; as my blog engine. The reason for the switch was to get access to all of the plug ins available, I could have added the functionality, but unfortunately I find myself a bit time starved as of late.&lt;/p&gt;
+&lt;p&gt;In order to prevent all of my old permalinks links from breaking, while moving from a /year/month/day/postname format to simply having postname as the url, I am using IIS7’s URL Rewriting Module. It turned out to be quite simple to do this, and here are the entries that change the requests to the new Url Scheme:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;rule name=&amp;quot;Aspx&amp;quot; enabled=&amp;quot;false&amp;quot; stopProcessing=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;match url=&amp;quot;archive/[0-9][0-9][0-9][0-9]/[0-9][0-9]/[0-9][0-9]/([A-Za-z0-9-_.]+).aspx&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;conditions logicalGrouping=&amp;quot;MatchAny&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;action type=&amp;quot;Redirect&amp;quot; url=&amp;quot;http://seanlynch.io/{R:1}&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;/rule&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;rule name=&amp;quot;Rss&amp;quot; enabled=&amp;quot;false&amp;quot; stopProcessing=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;match url=&amp;quot;rss.aspx&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;conditions logicalGrouping=&amp;quot;MatchAny&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;action type=&amp;quot;Redirect&amp;quot; url=&amp;quot;/feed&amp;quot; redirectType=&amp;quot;Permanent&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;/rule&amp;gt;&amp;lt;br /&amp;gt;&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;This has been working well, the only issue that I have run into so far is that categories in subtext were marked with numbers by default, and google’s crawler is finding them as broken links. I haven’t decided how to handle these links yet.&lt;/p&gt; &lt;/p&gt;
+&lt;/a&gt;</content:encoded></item><item><title><![CDATA[DotNetOpenAuth with AppDirectory removed]]></title><description><![CDATA[In my  previous post  I had talked about my decision to implement OpenId, and how DotNetOpenAuth worked well for this. In this post I will…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//dotnetopenauth-with-appdirectory-removed/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//dotnetopenauth-with-appdirectory-removed/</guid><pubDate>Tue, 02 Mar 2010 22:11:54 GMT</pubDate><content:encoded>&lt;p&gt;In my &lt;a href=&quot;http://seanlynch.io/open-id-with-dotnetopenid/&quot;&gt;previous post&lt;/a&gt; I had talked about my decision to implement OpenId, and how DotNetOpenAuth worked well for this. In this post I will talk a little about the only issue that I ran into while doing this.&lt;/p&gt;
+&lt;p&gt;The root of this issue had to do with how my hosting is setup for sites that have low traffic. I host these sites on winhost which allows for an unlimited number of domain pointers. They also have the URL Rewrite module, so I can rewrite &lt;a href=&quot;http://webquestbuilder.com/&quot;&gt;http://webquestbuilder.com/&lt;/a&gt; to &lt;a href=&quot;http://webquestbuilder.com/sitedir&quot;&gt;http://webquestbuilder.com/sitedir&lt;/a&gt; enabling the site to be moved later when demand requires more horsepower without having to deal with the removal of the sub directory.&lt;/p&gt;
+&lt;p&gt;The problem that came from this setup was that DotNetOpenAuth determined that the releam was webquestbuilder.com/sitedir instead of webquestbuilder.com, and returned from openid with to the sitedir/authenticate.  &lt;a href=&quot;http://blog.nerdbank.net/&quot; target=&quot;_blank&quot;&gt;Andrew Arnott&lt;/a&gt; pointed me in the right direction pretty quick after my tweet. Here is what I ended up with to fix this, it is in 2 parts.&lt;/p&gt;
+&lt;p&gt;The first is making the request:&lt;/p&gt;
+&lt;pre class=&quot;gatsby-highlight&quot;&gt;&lt;code&gt;
+if (isInSubDir)
+{
+  request = openid.CreateRequest(Request.Form[&quot;openid_identifier&quot;], new Realm      
+    (&quot;http://webquestbuilder.com/&quot;),  
+      new Uri(&quot;http://webquestbuilder.com/User/Authenticate/&quot;));
+}
+else
+{
+  request = openid.CreateRequest(Request.Form[&quot;openid_identifier&quot;]);
+}`
+  
+The second part is dealing with the response:
+  
+`
+var isInSubDir = Request.ApplicationPath!=&quot;/&quot;;
+IAuthenticationResponse response;
+if (isInSubDir)
+{
+var absoluteUri = httpRequest.Url.AbsoluteUri;
+var rawUrl = httpRequest.RawUrl;
+if(isInSubDir)
+{
+absoluteUri = absoluteUri.Replace(Request.ApplicationPath, &quot;&quot;);
+rawUrl = rawUrl.Replace(Request.ApplicationPath, &quot;&quot;);
+}
+var httpRequestInfo = new HttpRequestInfo(httpRequest.HttpMethod, new Uri(absoluteUri), rawUrl, headers, httpRequest.InputStream);
+response = openid.GetResponse(httpRequestInfo);
+}
+else
+{
+response = openid.GetResponse();
+}&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[Open Id with DotNetOpenId]]></title><description><![CDATA[I recently integrated OpenId into a project that I am working on with my wife,  WebQuest Builder  in order to avoid the extra considerations…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//open-id-with-dotnetopenid/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//open-id-with-dotnetopenid/</guid><pubDate>Tue, 02 Mar 2010 17:28:00 GMT</pubDate><content:encoded>&lt;p&gt;I recently integrated OpenId into a project that I am working on with my wife, &lt;a href=&quot;http://webquestbuilder.com/&quot;&gt;WebQuest Builder&lt;/a&gt; in order to avoid the extra considerations related to storing user password.&lt;/p&gt;
+&lt;p&gt;Originally I had planned on using RPXNow in order to do this. But after reading about how realms worked, specifically that  Google gives a different identifier for each realm, I decided against this option. Because&lt;/p&gt;
+&lt;p&gt;while RPXNow does have support  for custom realms, webquestbuilder.com instead of webquestbuilder.rpxnow.com, it would cost $99/month in order to get this. And after my wife made a comment that it seemed almost like someone phishing for her account do to the webquestbuilder.rxpnow.com in Googles OpenId form.&lt;/p&gt;
+&lt;p&gt;The other option that I had been considering had been &lt;a href=&quot;http://www.dotnetopenauth.net/&quot;&gt;DotNetOpenAuth&lt;/a&gt; which was very simple to integrate. It took about an hour to get it running in my development environment. I only had one issue when I pushed it live, which I will go into in a &lt;a href=&quot;http://seanlynch.io/dotnetopenauth-with-appdirectory-removed/&quot; title=&quot;future post&quot;&gt;future post&lt;/a&gt;. For the OpenId selector I used &lt;a href=&quot;http://jvance.com/pages/JQueryOpenIDPlugin.xhtml&quot;&gt;Jarrett Vance’s Id selector&lt;/a&gt; for the Sign In.&lt;/p&gt;
+&lt;p&gt;After showing it to a few people I ended up making a few tweaks to the Id Selector. The first  chance that I made was to change it so that the OpenId checkbox did not show up, because a couple of the people I showed it to tried entering in their gmail address instead of Google’s OpenId Url. The other change I did was order them by which providers I thought they were most likely to be using, I hope the Microsoft gets their OpenId provider going soon so that I can integrate hotmail/live accounts into this.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ScriptControl question]]></title><description><![CDATA[As of late I have gotten a chance to use the ASP.Net AJAX extenders and script controls, and so far am really liking how they work, though…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//scriptcontrol-question/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//scriptcontrol-question/</guid><pubDate>Mon, 07 Jul 2008 17:09:08 GMT</pubDate><content:encoded>&lt;p&gt;As of late I have gotten a chance to use the ASP.Net AJAX extenders and script controls, and so far am really liking how they work, though it would be nice if adding the .js was a little cleaner then manually adding them to the assembly wether in the AssemblyInfo.cs or the controls cs file.&lt;/p&gt;
+&lt;p&gt;I have to say I really like the extender and script controls that come with the ASP.NET AJAX. They really are so much nicer to work with then building up Javascript strings in the CS file of the server control. &lt;/p&gt;
+&lt;p&gt;I do have a question about them though. One of the ScriptControls I made uses a webservice to pull data if the service name is set. At the moment I have it dynamically registering an JSON script service based webservice. Unfortunately I have found that this is not an optimal solution since the name of the Javascript object created by the ScriptService changes depending on the namespace and class name of the service. &lt;/p&gt;
+&lt;p&gt;I am sure that there is a better way to do this, but I am not exactly certain of it. Any suggestions or links would be appreciated.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Lazy list]]></title><description><![CDATA[I have been following  Rob Conery’s  posts on the MVC Storefront, and trying the repository/pipes-filters for data access that he has been…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//lazy-list/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//lazy-list/</guid><pubDate>Wed, 21 May 2008 01:34:18 GMT</pubDate><content:encoded>&lt;p&gt;I have been following &lt;a href=&quot;http://blog.wekeroad.com/&quot; target=&quot;_blank&quot;&gt;Rob Conery’s&lt;/a&gt; posts on the MVC Storefront, and trying the repository/pipes-filters for data access that he has been using.&lt;/p&gt;
+&lt;p&gt;While trying out the implementation of a LazyList he was using, I had noticed that the example table was being joined onto the category table. At the time however, I really had not thought much of it, until I read &lt;a href=&quot;http://blog.wekeroad.com/mvc-storefront/mvcstore-intermission2/&quot; target=&quot;_blank&quot;&gt;MVC Storefront: Brainbender Intermission&lt;/a&gt; which got me thinking. &lt;/p&gt;
+&lt;p&gt;Admittedly, I don’t really have to much of a problem with it loading all of the examples for all the categories at one time at the moment. However, I figured it would be nice to have it work the way intended, and query the database for the examples in a category only when asked for.&lt;/p&gt;
+&lt;p&gt;I liked the idea of the LazyList, and since I was already using a Service class for all data access, along with setting up the category hierarchy I moved the creation of the LazyList of examples property into the the GetCategories method of the service class.&lt;/p&gt;
+&lt;p&gt;It seems that as long as the LazyList is created after the categories .ToList() call it properly works. So I ended up with this code:&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;categories.ForEach(category =&gt;d
+            {
+                category.Examples =
+                    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;LazyList&lt;/span&gt;&amp;lt;DevExamples.Data.&lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;Example&lt;/span&gt;&amp;gt;(
+                        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;from&lt;/span&gt; e &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;in&lt;/span&gt; repository.GetExamples()
+                        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;where&lt;/span&gt; e.CategoryId == category.ID
+                        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;select&lt;/span&gt; e);
+
+                &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;var&lt;/span&gt; subCategories = (&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;from&lt;/span&gt; sub &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;in&lt;/span&gt; categories
+                                     &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;where&lt;/span&gt; sub.ParentId == category.ID
+                                     &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;select&lt;/span&gt; sub).ToList();
+                category.SubCategories = subCategories;
+
+                subCategories.ForEach(c =&amp;gt; c.Parent = category);
+
+            });
+&lt;/pre&gt;</content:encoded></item><item><title><![CDATA[Custom Rss Admin feeds]]></title><description><![CDATA[I fixed up the Rss Admin feeds so that modifying web.config (along with new handler classes) would not needed to add a new Admin Rss feed…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//custom-rss-admin-feeds/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//custom-rss-admin-feeds/</guid><pubDate>Sun, 20 Apr 2008 19:34:55 GMT</pubDate><content:encoded>&lt;p&gt;I fixed up the Rss Admin feeds so that modifying web.config (along with new handler classes) would not needed to add a new Admin Rss feed.&lt;/p&gt;
+&lt;p&gt;Also added a simple form to allow administrators to created their own. It is a bit limited, but adding additional options should not be to hard. Though those will have to wait till a later date.&lt;/p&gt;
+&lt;p&gt;On a side note, I found that if I had the option of returning the non-generic  base class, or a generic subclass it makes the code a lot more flexible if you return the non-generic base class if you do not have a need to have the generic type.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Login via Usercontrol View + jQuery]]></title><description><![CDATA[Since administration was the next part I wanted to work on. I decided that for the moment I just want a little login for in the upper corner…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//login-via-usercontrol-view-jquery/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//login-via-usercontrol-view-jquery/</guid><pubDate>Tue, 18 Mar 2008 02:55:18 GMT</pubDate><content:encoded>&lt;p&gt;Since administration was the next part I wanted to work on.&lt;/p&gt;
+&lt;p&gt;I decided that for the moment I just want a little login for in the upper corner&lt;/p&gt;
+&lt;p&gt;I decided to put the login screen view logic into a user control, and added the following user control named Login.ascx and placed it into the Shared&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%@&lt;/span&gt; &lt;span style=&quot;color: #a31515;&quot;&gt;Control&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;Language&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;C#&quot;&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;Inherits&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;System.Web.Mvc.ViewUserControl&quot;&lt;/span&gt; &lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;
+
+&amp;lt;%if&lt;/span&gt;(!Page.User.Identity.IsAuthenticated) {&lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;
+&lt;/span&gt;    &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;form&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;action&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;/Home/Login&quot;&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;method&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;post&quot;&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;LoginForm&quot;&amp;gt;
+&lt;/span&gt;        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;span&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;EmailLabel&quot;&amp;gt;&lt;/span&gt;Username:&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;br&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;/&amp;gt;
+&lt;/span&gt;        &lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%=&lt;/span&gt;Html.TextBox(&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Username&quot;&lt;/span&gt;)&lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;br&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;/&amp;gt;
+&lt;/span&gt;        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;span&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;PasswordLabel&quot;&amp;gt;&lt;/span&gt;Password:&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;br&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;/&amp;gt;
+&lt;/span&gt;        &lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%=&lt;/span&gt;Html.Password(&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Password&quot;&lt;/span&gt;)&lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;br&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;/&amp;gt;
+&lt;/span&gt;         &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;span&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;Error&quot;&amp;gt;
+&lt;/span&gt;            &lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%=&lt;/span&gt;ViewData.ContainsDataItem(&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Message&quot;&lt;/span&gt;) ? ViewData[&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Message&quot;&lt;/span&gt;] + 
+               &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;&amp;lt;BR /&amp;gt;&quot;&lt;/span&gt; : &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;
+&lt;/span&gt;        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%=&lt;/span&gt;Html.SubmitButton(&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Submit&quot;&lt;/span&gt;, &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Login&quot;&lt;/span&gt;)&lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;
+&lt;/span&gt;    &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;form&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%&lt;/span&gt;}&lt;span style=&quot;color: #0000ff;&quot;&gt;else&lt;/span&gt; {&lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;
+&lt;/span&gt;        &lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;Not &lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%=&lt;/span&gt;Page.User.Identity.Name &lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;br&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;/&amp;gt;&lt;/span&gt;    
+        &lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%=&lt;/span&gt;Html.ActionLink&amp;lt;DevExamples.Controllers.&lt;span style=&quot;color: #2b91af;&quot;&gt;HomeController&lt;/span&gt;&amp;gt;(c =&amp;gt; c.Logout()
+            , &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Logout&quot;&lt;/span&gt;, &lt;span style=&quot;color: #0000ff;&quot;&gt;new&lt;/span&gt; { id = &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;LogoutLink&quot;&lt;/span&gt; })&lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;span&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;
+
+&lt;/span&gt;&lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%&lt;/span&gt;} &lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;
+&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;And added the user control to the masterpage using&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;div&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;Login&quot;&amp;gt;&lt;/span&gt;&lt;span style=&quot;background: #ffee62;&quot;&gt;&amp;lt;%=&lt;/span&gt;Html.RenderUserControl(&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;~/Views/Shared/Login.ascx&quot;&lt;/span&gt;) &lt;span style=&quot;background: #ffee62;&quot;&gt;%&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;&amp;lt;div&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;I was going to use&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;using&lt;/span&gt; (Html.Form&amp;lt;DevExamples.Controllers.&lt;span style=&quot;color: #2b91af;&quot;&gt;HomeController&lt;/span&gt;&amp;gt;(c=&amp;gt;c.Login()
+   ,System.Web.Mvc.&lt;span style=&quot;color: #2b91af;&quot;&gt;FormExtensions&lt;/span&gt;.&lt;span style=&quot;color: #2b91af;&quot;&gt;FormMethod&lt;/span&gt;.post,&lt;span style=&quot;color: #0000ff;&quot;&gt;new&lt;/span&gt; {id=&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;LoginForm&quot;&lt;/span&gt;}))&lt;/pre&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;to create the form (because it is a lot cooler), but couldn’t get the html attributes to work and was more interested in getting the dynamic stuff working then looking at the code for the extension method in the MVCToolKit, in other words being lazy.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;I thought about putting the authentication checking logic into the controller. But handling it this way made it a bit simpler, and more self contained, so until I find a compelling enough reason I will be leaving it this way.&lt;/p&gt;
+&lt;p&gt;After I had the user control showing up, I decided to hook up the actual authentication. I decided to go with forms authentication, and set it up using the button in the solution explorer.&lt;/p&gt;
+&lt;p&gt;Next it was time to create the login and logout controller actions, which I decided would best fit in the HomeController, At first I had thought to create two separate views, one for when logged in and one for logged out, then remembered &lt;a href=&quot;http://haacked.com/&quot;&gt;Phil Haack&lt;/a&gt;, at least I think it was him, something about being able to use user controls in the RenderView method of the controller.&lt;/p&gt;
+&lt;p&gt;I ended up with the following two controller actions:&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;[&lt;span style=&quot;color: #2b91af;&quot;&gt;ControllerAction&lt;/span&gt;]
+&lt;span style=&quot;color: #0000ff;&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;void&lt;/span&gt; Login()
+{
+    &lt;span style=&quot;color: #0000ff;&quot;&gt;if&lt;/span&gt; (!ControllerContext.HttpContext.User.Identity.IsAuthenticated)
+    {
+        &lt;span style=&quot;color: #0000ff;&quot;&gt;if&lt;/span&gt; (Request.RequestType == &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;POST&quot;&lt;/span&gt;)
+        {
+            &lt;span style=&quot;color: #0000ff;&quot;&gt;string&lt;/span&gt; userName = Request.Form[&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Username&quot;&lt;/span&gt;];
+            &lt;span style=&quot;color: #0000ff;&quot;&gt;string&lt;/span&gt; password = Request.Form[&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Password&quot;&lt;/span&gt;];
+
+            &lt;span style=&quot;color: #0000ff;&quot;&gt;if&lt;/span&gt; (&lt;span style=&quot;color: #2b91af;&quot;&gt;Membership&lt;/span&gt;.ValidateUser(userName, password))
+            {
+                &lt;span style=&quot;color: #2b91af;&quot;&gt;FormsAuthentication&lt;/span&gt;.SetAuthCookie(userName, &lt;span style=&quot;color: #0000ff;&quot;&gt;true&lt;/span&gt;);
+                &lt;span style=&quot;color: #008000;&quot;&gt;//Set cookie and redirect
+&lt;/span&gt;                RedirectToAction(&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Login&quot;&lt;/span&gt;);
+            }
+            &lt;span style=&quot;color: #0000ff;&quot;&gt;else
+&lt;/span&gt;            {
+                ViewData.Add(&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Message&quot;&lt;/span&gt;, &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Invalid Username/Password&quot;&lt;/span&gt;);
+            }
+        }
+    }
+    RenderView(&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Login&quot;&lt;/span&gt;);
+}
+[&lt;span style=&quot;color: #2b91af;&quot;&gt;ControllerAction&lt;/span&gt;]
+&lt;span style=&quot;color: #0000ff;&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;void&lt;/span&gt; Logout()
+{
+    &lt;span style=&quot;color: #2b91af;&quot;&gt;FormsAuthentication&lt;/span&gt;.SignOut();
+    RedirectToAction(&lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Login&quot;&lt;/span&gt;);
+}
+&lt;/pre&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Since it was allowing me to just render out the user control, I decided there was no point to refreshing the whole page, so decided to use a AJAXish way of doing it. So I decided it was time to pick a javascript library. And since &lt;a href=&quot;http://haacked.com/archive/2007/12/13/thank-you-for-helping-me-with-my-job-with-asp.net.aspx&quot;&gt;Phil had provided a link&lt;/a&gt; to  &lt;a href=&quot;http://www.chadmyers.com/Blog/archive/2007/12/10/using-script.aculo.us-with-asp.net-mvc.aspx&quot;&gt;Using script.aculo.us with ASP.NET MVC&lt;/a&gt; by Chad Myers,I decided to go with jQuery for this (that and it seemed to fit better).&lt;/p&gt;
+&lt;p&gt;After a bit of reading through their tutorials I added this to the header section of the master page.&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;script&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;src&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;../../Content/jquery.js&quot;&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;type&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;text/javascript&quot;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;script&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;
+&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;script&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;src&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;../../Content/jquery.form.js&quot;&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;type&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;text/javascript&quot;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;script&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;
+&amp;lt;&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;script&lt;/span&gt; &lt;span style=&quot;color: #ff0000;&quot;&gt;type&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;=&quot;text/javascript&quot;&amp;gt;
+&lt;/span&gt;    &lt;span style=&quot;color: #0000ff;&quot;&gt;var&lt;/span&gt; readyFuncs = &lt;span style=&quot;color: #0000ff;&quot;&gt;function&lt;/span&gt;() { 
+        $(&lt;span style=&quot;color: #a31515;&quot;&gt;&apos;#LoginForm&apos;&lt;/span&gt;).ajaxForm(&lt;span style=&quot;color: #0000ff;&quot;&gt;function&lt;/span&gt;(result) { 
+            $(&lt;span style=&quot;color: #a31515;&quot;&gt;&apos;#Login&apos;&lt;/span&gt;).html(result); 
+            $(document).ready(readyFuncs); 
+        }); 
+        $(&lt;span style=&quot;color: #a31515;&quot;&gt;&apos;#LogoutLink&apos;&lt;/span&gt;).click(&lt;span style=&quot;color: #0000ff;&quot;&gt;function&lt;/span&gt;(){
+            $.&lt;span style=&quot;color: #0000ff;&quot;&gt;get&lt;/span&gt;(&lt;span style=&quot;color: #a31515;&quot;&gt;&apos;/Home/Logout&apos;&lt;/span&gt;,&lt;span style=&quot;color: #0000ff;&quot;&gt;function&lt;/span&gt;(result){
+                $(&lt;span style=&quot;color: #a31515;&quot;&gt;&apos;#Login&apos;&lt;/span&gt;).html(result);
+                $(document).ready(readyFuncs); 
+            });
+            &lt;span style=&quot;color: #0000ff;&quot;&gt;return&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;false&lt;/span&gt;;
+        });
+    };
+    $(document).ready(readyFuncs);
+&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&quot;color: #a31515;&quot;&gt;script&lt;/span&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/pre&gt;
+&lt;p&gt;The only real snag I had run into with this was that each time the Login div was refreshed I had to reregister the events.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[.Net based SVN client library]]></title><description><![CDATA[As an exercise to figure out socket programming I have been messing around with creating an SVN client library to use with DevExamples.com…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//net-based-svn-client-library/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//net-based-svn-client-library/</guid><pubDate>Tue, 18 Mar 2008 01:30:38 GMT</pubDate><content:encoded>&lt;p&gt;As an exercise to figure out socket programming I have been messing around with creating an SVN client library to use with DevExamples.com, well actually a generic SC client library that would allow me to change what repository site I was working against, SVN just seemed like the simplest of them at the moment.&lt;/p&gt;
+&lt;p&gt;However, after thinking about it, I think it would be better to use one that is already built if possible. I just have not been able to find a pure .Net client library. It is also seems rare for a source control library to work without a working folder, which is somewhat limiting when I want to check the propagation of examples using this method on the same machine.&lt;/p&gt;
+&lt;p&gt;Though I think it would be interesting to write a LINQ to Source provider, as a way to learn expression trees better. Plus it would be nice to be able to not only easily switch hosting providers (the reason I am looking for a pure .Net library) but also to have a standard syntax to allow me to easily switch from SVN to &lt;a href=&quot;http://sourcegear.com/vault/index.html&quot;&gt;SourceGear’s Vault&lt;/a&gt; (which I use for my personal development projects) to TFS (which we use at work) as the storage system for the examples.&lt;/p&gt;
+&lt;p&gt;Though &lt;a href=&quot;http://www.codeplex.com/SvnBridge&quot;&gt;SvnBridge&lt;/a&gt; could possibly help with that too.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Got my nice Urls working]]></title><description><![CDATA[Its amazing how fast things can be done when not fighting bad assumptions. In this case it was that my admin URLs needed to use the nice…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//got-my-nice-urls-working/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//got-my-nice-urls-working/</guid><pubDate>Tue, 18 Mar 2008 00:52:52 GMT</pubDate><content:encoded>&lt;p&gt;Its amazing how fast things can be done when not fighting bad assumptions. In this case it was that my admin URLs needed to use the nice descriptive URLs, instead of just /[Controller]/[Action]/[id] type routing.&lt;/p&gt;
+&lt;p&gt;Once I realized I was making things overly complicated I, I ended up with a set of routing functions that are actually a bit less complicated then what I would have come up with if I had been able to extend the RouteTable the way I had planned originally.&lt;/p&gt;
+&lt;p&gt;I also decided that I didn’t like the idea of having the make every category and example name unique. Most of this was that I’m not the creative, but I also realized that it would be really ugly I wanted to have namespaces as categories. For example, it would not have been possible to have both C/System/Windows/Forms/Control and C/System/Web/UI/Control since Control would have had to be unique.&lt;/p&gt;
+&lt;p&gt;I also decided that I was going to set a limit to the depth of categories that the site was going to have, though it is easy to update this. First I made a function that would generate routes similar to those &lt;a href=&quot;http://myheadsexploding.com/archive/2007/12/13/routing-revisited.aspx&quot;&gt;previously posted&lt;/a&gt;. &lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;protected&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;void&lt;/span&gt; CreateRouteSet(&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; baseRoute, &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; baseName
+    , &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;int&lt;/span&gt; maxDepth, &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;object&lt;/span&gt; Defaults)
+{
+    &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;StringBuilder&lt;/span&gt; sb = &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;StringBuilder&lt;/span&gt;();
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;for&lt;/span&gt; (&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;int&lt;/span&gt; i = 0; i &amp;lt; maxDepth; i++)
+    {
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;if&lt;/span&gt; (sb.Length &amp;gt; 0)
+            sb.Append(&lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;/&quot;&lt;/span&gt;);
+
+        sb.AppendFormat(&lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;[{0}{1}]&quot;&lt;/span&gt;, baseName, i);
+
+        &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;RouteTable&lt;/span&gt;.Routes.Add(&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;Route&lt;/span&gt;{
+         
+            Url = &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;String&lt;/span&gt;.Format(baseRoute,sb.ToString()),
+            Defaults = Defaults,
+            RouteHandler = &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;typeof&lt;/span&gt;(&lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;MvcRouteHandler&lt;/span&gt;)
+        });
+    }
+}
+
+&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;protected&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;void&lt;/span&gt; Application_Start(&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;object&lt;/span&gt; sender, &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;EventArgs&lt;/span&gt; e)
+{
+
+    CreateRouteSet(&lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;C/{0}&quot;&lt;/span&gt;, &lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;Category&quot;&lt;/span&gt;, 6,
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; { Action = &lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;Index&quot;&lt;/span&gt;, Controller = &lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;Categories&quot;&lt;/span&gt; }
+        );
+
+    &lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//Other routes using the standard [Controller]/[Action]/[Id]&lt;/span&gt;
+
+}&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;http://11011.net/software/vspaste&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This will setup routes to handle category hierarchies up to 6 deep.  And add Category1,Category2… into the RouteData.Values collection in the controller.&lt;/p&gt;
+&lt;p&gt;Next I set up the code to allow me to handle the route, which I did in the model, adding a method that takes an IDictionary&amp;#x3C;string,object&gt;. &lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;Category&lt;/span&gt; GetCategoryFromRouteData(&lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;IDictionary&lt;/span&gt;&amp;lt;&lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;String&lt;/span&gt;,&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;object&lt;/span&gt;&amp;gt; data)
+{
+&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;    //Grab just the category data&lt;br /&gt;&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;var&lt;/span&gt; navList = &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;from&lt;/span&gt; route &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;in&lt;/span&gt; data
+               &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;where&lt;/span&gt; route.Key.IndexOf(&lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;Category&quot;&lt;/span&gt;) == 0
+               &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;orderby&lt;/span&gt; route.Key
+               &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;select&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;new&lt;/span&gt;{Key = route.Key, Value = route.Value.ToString()};
+
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; sqlSelect = &lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;@&quot;
+        SELECT {0}.* 
+        FROM Category {0}
+        {1}
+        WHERE {0}.Name = {{0}}&quot;&lt;/span&gt;;
+&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;    &lt;br /&gt;    //{{{2}}} will be replaced with {{&amp;lt;param index&amp;gt;}}&lt;br /&gt;&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; join = &lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;@&quot;INNER JOIN Category {0} ON {0}.[Key] = {1}.ParentKey 
+                    AND {0}.[Name] = {{{2}}}
+
+&lt;/span&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;    //This is the name of the category I am actually interested in&lt;br /&gt;&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;var&lt;/span&gt; mainCat = navList.Last();
+
+    &lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//Build a list of category values to for parameterized query&lt;br /&gt;    &lt;/span&gt;&lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;List&lt;/span&gt;&amp;lt;&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt;&amp;gt; values = &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;List&lt;/span&gt;&amp;lt;&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt;&amp;gt;();
+    values.Add(mainCat.Value);
+    &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;StringBuilder&lt;/span&gt; sb = &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;StringBuilder&lt;/span&gt;();
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; lastCategory = mainCat.Key;
+
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;int&lt;/span&gt; i = 1;
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;foreach&lt;/span&gt; (&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;var&lt;/span&gt; item &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;in&lt;/span&gt; navList.Reverse().Skip(1))
+    {
+        sb.AppendFormat(join, item.Key, lastCategory,i++);
+        values.Add(item.Value);
+        lastCategory = item.Key;
+    }
+
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; sql = &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;String&lt;/span&gt;.Format(sqlSelect,mainCat.Key, sb.ToString());
+    &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;Category&lt;/span&gt; cat = &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt;.ExecuteQuery&amp;lt;&lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;Category&lt;/span&gt;&amp;gt;(sql, values.ToArray()).Single();&lt;br /&gt;
+&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;&lt;br /&gt;&lt;br /&gt;    //GetDisplayCategory skips over categories that have only 1 subcategory &lt;br /&gt;    //and no examples, allowing me to have the planned Url structure without &lt;br /&gt;    //&lt;/span&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;requiring the user to navigate through several empty categories.&lt;br /&gt;&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;return&lt;/span&gt; GetDisplayCategory(cat);
+}&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;http://11011.net/software/vspaste&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I had planned on having doing it all LINQ to SQL expressions, but it was taking more time then it was worth to figure out how to do the hierarchy lookup from the category names.  I need to add some caching of the key lookups at some point, since the joins look like they might get a bit nasty for deep categories, but that can wait.&lt;/p&gt;
+&lt;p&gt;I added a few overloads to the HtmlHelper ActionLink extension methods to handle making the nice Url links.&lt;/p&gt;
+&lt;p&gt;Now I need to figure out how to deploy the usercontrols that will contain the executable part of the example. I have had some problems with compilation sometimes when I had the website directly upload the usercontrols. Plus I would like them to go into source control when I add them.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Initial thoughts on Microsoft MVC]]></title><description><![CDATA[My first thought is, I really wish I could use this at work, but it is working nicely so far for my rewrite of my web site. Writing Classic…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//initial-thoughts-on-microsoft-mvc/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//initial-thoughts-on-microsoft-mvc/</guid><pubDate>Tue, 18 Mar 2008 00:51:36 GMT</pubDate><content:encoded>&lt;p&gt;My first thought is, I really wish I could use this at work, but it is working nicely so far for my rewrite of my web site. Writing Classic ASP style again is taking a little getting used to again though, the visual preview from the designers made styling the page a lot nicer. &lt;/p&gt;
+&lt;p&gt;The lack of control designers also seem like it would hinder having a graphics guy using Expression Web do the UI with MVC based web applications. But I have never worked with a graphics guy on a project that way anyway so I am could be wrong.&lt;/p&gt;
+&lt;p&gt;It would also be nice if the method used by the Route class to parse the Url was virtual, so I could subclass it and allow me to parse something like:&lt;/p&gt;
+&lt;p&gt;/Example/Simple/Form/MultiPageForm/ShowSource/&lt;/p&gt;
+&lt;p&gt;to go to the Examples controller, going into the following controller action&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;[&lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;ControllerAction&lt;/span&gt;]&lt;br /&gt;&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;void&lt;/span&gt; ShowSource(&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt;[] Categories, &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; ID)
+&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&quot;http://11011.net/software/vspaste&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;which would allow me to have a consistent directory scheme for both the ASP.Net examples, along with the Classic ASP examples that are already available.&lt;/p&gt;
+&lt;p&gt;I could probably do something like /Example/Simple_Form/MultiPageForm/ and use [Controller]/[Category]/[ID]/[Action] but I would prefer it to get to the controller action pre-parsed.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Generic begin/end Html tag extension method]]></title><description><![CDATA[After working on the login usercontrol, I decided that I wanted to add similar functionality to the navigation sections of the site for…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//generic-beginend-html-tag-extension-method/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//generic-beginend-html-tag-extension-method/</guid><pubDate>Tue, 18 Mar 2008 00:51:14 GMT</pubDate><content:encoded>&lt;p&gt;After working on the login usercontrol, I decided that I wanted to add similar functionality to the navigation sections of the site for accounts/roles that didn’t get ads displayed. So I needed a standard way to put dynamic sections into a page.&lt;/p&gt;
+&lt;p&gt;I liked the syntax used by the form HtmlHelper methods, so decided to base it off of the SimpleForm class and ended up with this&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//Based on the SimpleForm class in MvcToolkit &lt;br /&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//Wish I believed I would have ever thought to use&lt;br /&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//IDisposable to do this&lt;/span&gt;&lt;/pre&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;class&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;SimpleWrappingTag&lt;/span&gt; : &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;IDisposable&lt;br /&gt;&lt;/span&gt;{
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;protected&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; _beginTagFormat = &lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;&amp;lt;{0} {1}&amp;gt;&quot;&lt;/span&gt;;
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;protected&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; _attributeFormat = &lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;{0}=&quot;{1}&quot; &quot;&lt;/span&gt;;
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;bool&lt;/span&gt; _startTagRendered = &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;false&lt;/span&gt;;
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;bool&lt;/span&gt; _endTagRendered = &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;false&lt;/span&gt;;
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;protected&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;IHttpContext&lt;/span&gt; _context;
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;protected&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;object&lt;/span&gt; _htmlAttributes = &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;null&lt;/span&gt;;
+
+
+    &lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//Not letting this be modified outside the class for now
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//might change later
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; TagName { &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;get&lt;/span&gt;; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;protected&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;set&lt;/span&gt;; }
+
+
+    &lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//Subclassed controls can put their class specific info here
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; SimpleWrappingTag(&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; tagName)
+    {
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt;.TagName = tagName;
+    }
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; SimpleWrappingTag(&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; tagName, &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;IHttpContext&lt;/span&gt; context
+        , &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;object&lt;/span&gt; htmlAttributes)
+    {
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt;.TagName = tagName;
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt;._context = context;
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt;._htmlAttributes = htmlAttributes;
+    }
+
+    &lt;span style=&quot;color: rgb(128,128,128)&quot;&gt;///&lt;/span&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(128,128,128)&quot;&gt;&amp;lt;summary&amp;gt;
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(128,128,128)&quot;&gt;///&lt;/span&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt; Creates a StringBuilder and passes it to an overloaded method. 
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(128,128,128)&quot;&gt;///&lt;/span&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt; Override this method for attributes that should be first in tag.
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(128,128,128)&quot;&gt;///&lt;/span&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(128,128,128)&quot;&gt;&amp;lt;/summary&amp;gt;
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(128,128,128)&quot;&gt;///&lt;/span&gt;&lt;span style=&quot;color: rgb(0,128,0)&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(128,128,128)&quot;&gt;&amp;lt;returns&amp;gt;&amp;lt;/returns&amp;gt;
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;protected&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;virtual&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;StringBuilder&lt;/span&gt; BuildAttributeList()
+    {
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;return&lt;/span&gt; BuildAttributeList(&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;StringBuilder&lt;/span&gt;());
+    }
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;protected&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;virtual&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;StringBuilder&lt;/span&gt; BuildAttributeList(&lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;StringBuilder&lt;/span&gt; sb)
+    {
+        sb.Append(_htmlAttributes.ToAttributeList());
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;return&lt;/span&gt; sb;
+    }
+    &lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//Method orginally from SimpleForm, but changed to work with 
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,128,0)&quot;&gt;//BuildAttributeList instead of BuildFormOpenTag
+&lt;/span&gt;    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;void&lt;/span&gt; WriteStartTag()
+    {
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;if&lt;/span&gt; (!&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt;._startTagRendered)
+        {
+            &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; formTag = &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;String&lt;/span&gt;.Format(&lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;&amp;lt;{0} {1}&amp;gt;&quot;&lt;/span&gt;, TagName
+                , BuildAttributeList());
+            &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt;._context.Response.Write(formTag);
+        }
+    }
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;void&lt;/span&gt; WriteEndTag()
+    {
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;if&lt;/span&gt; (!&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt;._endTagRendered)
+            &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt;._context.Response.Write(&lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;String&lt;/span&gt;.Format(&lt;span style=&quot;color: rgb(163,21,21)&quot;&gt;&quot;&amp;lt;/{0}&amp;gt;&quot;&lt;/span&gt;, TagName));
+    }
+
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;void&lt;/span&gt; Dispose()
+    {
+        WriteEndTag();
+    }
+}
+&lt;a href=&quot;http://11011.net/software/vspaste&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://11011.net/software/vspaste&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://11011.net/software/vspaste&quot;&gt;&lt;/a&gt;&lt;/pre&gt;
+&lt;p&gt;Next I made some trivial, but needed extension methods for the HtmlHelper class.&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;static&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;class&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;DevExamplesExtensions
+&lt;/span&gt;{
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;static&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;IDisposable&lt;/span&gt; HtmlTag(&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;HtmlHelper&lt;/span&gt; helper, &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; tagName)
+    {
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;return&lt;/span&gt; helper.HtmlTag(tagName, &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;null&lt;/span&gt;);
+    }
+    &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;static&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;IDisposable&lt;/span&gt; HtmlTag(&lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;this&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;HtmlHelper&lt;/span&gt; helper
+        , &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; tagName, &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;object&lt;/span&gt; htmlAttributes)
+    {
+        &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;SimpleWrappingTag&lt;/span&gt; tag =  &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: rgb(43,145,175)&quot;&gt;SimpleWrappingTag&lt;/span&gt;(tagName
+            , helper.ViewContext.HttpContext, htmlAttributes);
+        tag.WriteStartTag();
+        &lt;span style=&quot;color: rgb(0,0,255)&quot;&gt;return&lt;/span&gt; tag;
+    }
+}&lt;/pre&gt;
+&lt;p&gt;And while I’m satisfied with how this turned out, though I’m hoping to be able to delete the code at some point, I don’t like how the code I wrote to implement an Ajax.UpdatePanel method turned out. So I’m not going to post it at the moment.&lt;/p&gt;
+&lt;p&gt;But it was going to look something like&lt;/p&gt;
+&lt;p&gt;public static UpdatePanel(this AjaxHelper helper, string panelId, ….)&lt;br&gt;
+{&lt;br&gt;
+helper.ViewContext.HttpContext.Write(“update panel js….”);&lt;br&gt;
+IDisposable tag = new HtmlHelper(helper.ViewContext.HttpContext)&lt;br&gt;
+.HtmlTag(“div”,new { id=panelId});&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;Below is a list of things I couldn’t think of a good solution for at the moment&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I didn’t like the fact that I was putting the actual JavaScript into the UpdatePanel   extension method. Rob Conery said something on the forums about using services to provide the view with site-wide info that seemed interesting, but not sure of a good way to implement this would be.
+It would be nice to have service providers kind of like you can use in Windows Workflow Foundation or VS control designers, that would let me add a IScriptService to do the actual JavaScript coding based on the script library I wanted to use.  Maybe I should just create a script provider for this. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Having to pass in a list of “triggering” controls felt kind of clunky. I’m trying to think of the best way to allow me to specify that a Html.ActionLink should register itself with the “UpdatePanel”.
+Most of what I think of for this, basically requires me to implement my own versions of the stuff already implemented in the MvcToolkit.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I couldn’t come up with a clean way to have the panel in the Usercontrol, but only have it be done if the usercontrol is called from a page instead of as a standalone view. I guess I could have the controller tell it this, but ideally they would just kind of know.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I think I may have already thought of the solution #3, and a workable #2. But I am really hesitant to do anything with #1 (outside the provider maybe) since I doubt I would do it close enough that I wouldn’t need to remove it all to move over to their way, should they implement something like service providers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I think I’m going to put this aside for a while on another part of the site, this just is a “nice to have” feature, and get some of the other pieces that I actually need to have for the site done.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Routing revisited]]></title><description><![CDATA[It turned out to be a lot easier to work around not being able to  override the route parsing method  then I had thought it would be last…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//routing-revisited/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//routing-revisited/</guid><pubDate>Tue, 18 Mar 2008 00:50:07 GMT</pubDate><content:encoded>&lt;p&gt;It turned out to be a lot easier to work around not being able to &lt;a href=&quot;http://myheadsexploding.com/archive/2007/12/12/initial-thoughts-on-microsoft-mvc.aspx&quot;&gt;override the route parsing method&lt;/a&gt; then I had thought it would be last night. Though when they allow me to override that method I will be changing over.&lt;/p&gt;
+&lt;p&gt;By setting up the following routes I was able to get almost the effect that I was looking for:&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;span style=&quot;color: #2b91af;&quot;&gt;RouteTable&lt;/span&gt;.Routes.Add(&lt;span style=&quot;color: #0000ff;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: #2b91af;&quot;&gt;Route
+&lt;/span&gt;{
+    Url = &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Example/[id]/[action]&quot;&lt;/span&gt;,
+    Defaults = &lt;span style=&quot;color: #0000ff;&quot;&gt;new&lt;/span&gt; { Controller = &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Example&quot;&lt;/span&gt; },
+    RouteHandler = &lt;span style=&quot;color: #0000ff;&quot;&gt;typeof&lt;/span&gt;(&lt;span style=&quot;color: #2b91af;&quot;&gt;MvcRouteHandler&lt;/span&gt;)
+});
+
+&lt;span style=&quot;color: #2b91af;&quot;&gt;RouteTable&lt;/span&gt;.Routes.Add(&lt;span style=&quot;color: #0000ff;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: #2b91af;&quot;&gt;Route
+&lt;/span&gt;{
+    Url = &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Example/[Category1]/[id]/[action]&quot;&lt;/span&gt;,
+    Defaults = &lt;span style=&quot;color: #0000ff;&quot;&gt;new&lt;/span&gt; { Controller = &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Example&quot;&lt;/span&gt; },
+    RouteHandler = &lt;span style=&quot;color: #0000ff;&quot;&gt;typeof&lt;/span&gt;(&lt;span style=&quot;color: #2b91af;&quot;&gt;MvcRouteHandler&lt;/span&gt;)
+});
+
+&lt;span style=&quot;color: #2b91af;&quot;&gt;RouteTable&lt;/span&gt;.Routes.Add(&lt;span style=&quot;color: #0000ff;&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;color: #2b91af;&quot;&gt;Route
+&lt;/span&gt;{
+    Url = &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Example/[Category1]/[Category2]/[id]/[action]&quot;&lt;/span&gt;,
+    Defaults = &lt;span style=&quot;color: #0000ff;&quot;&gt;new&lt;/span&gt; { Controller = &lt;span style=&quot;color: #a31515;&quot;&gt;&quot;Example&quot;&lt;/span&gt; },
+    RouteHandler = &lt;span style=&quot;color: #0000ff;&quot;&gt;typeof&lt;/span&gt;(&lt;span style=&quot;color: #2b91af;&quot;&gt;MvcRouteHandler&lt;/span&gt;)
+});&lt;/pre&gt;
+&lt;p&gt;Though the execute action just takes the id in&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;[&lt;span style=&quot;color: #2b91af;&quot;&gt;ControllerAction&lt;/span&gt;]
+&lt;span style=&quot;color: #0000ff;&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;void&lt;/span&gt; Execute(&lt;span style=&quot;color: #0000ff;&quot;&gt;string&lt;/span&gt; id)
+&lt;/pre&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;If I find that I actually need access to the Categories found in the path, I can access them using RouteData.Values. It also helps that I had decided that the examples should have a unique ID, that will be a lot like the friendly Urls used in &lt;a href=&quot;http://subtextproject.com&quot;&gt;Subtext&lt;/a&gt;. That way the directories are there more for aesthetics then utility. Though when the ability to override the route parsing, I will probably be changing it to this if possible later:&lt;/p&gt;
+&lt;p&gt;[&lt;span style=&quot;color: #2b91af;&quot;&gt;ControllerAction&lt;/span&gt;]&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;color: #0000ff;&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;color: #0000ff;&quot;&gt;void&lt;/span&gt; Execute(&lt;span style=&quot;color: #0000ff;&quot;&gt;string&lt;/span&gt; id, &lt;span style=&quot;color: #0000ff;&quot;&gt;string&lt;/span&gt;[] categories)&lt;/p&gt;
+&lt;p&gt;So now that I have the site navigation working the way that I want it, with the exception of a helper method for writing out the longer category listings, its time to work on the maintenance parts of the site.&lt;/p&gt;
+&lt;p&gt;And so far it seems that this will be a better fit then WebForms was for the last few reworks of the site, since I can make the UserControls containing the examples completely isolated, including having the runat server form in the control. The only one I liked better was the JSON based one, using ASP.Net AJAX Extensions, which would have gone live if AdSense worked with AJAX/JSON sites.&lt;/p&gt;
+&lt;p&gt;Overall the more I use it the more I like the feel of the framework. Especially now that I realized which of these  I wanted to selected when using a master page.&lt;/p&gt;
+&lt;p&gt;And so far the best part of the framework is that I don’t have to ignore features to not see this dialog after refreshing the page I just navigated to.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Anonymous Types and Interfaces]]></title><description><![CDATA[I finally had a chance to sit and work with LINQ for a bit, and while it is very cool, a little bit of its luster was lost when I can assign…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//anonymous-types-and-interfaces/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//anonymous-types-and-interfaces/</guid><pubDate>Wed, 12 Dec 2007 00:08:17 GMT</pubDate><content:encoded>&lt;p&gt;I finally had a chance to sit and work with LINQ for a bit, and while it is very cool, a little bit of its luster was lost when I can assign interfaces to the anonymous classes generated by the queries. Meaning I can not do something like:&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;interface&lt;/span&gt; &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IExample
+&lt;/span&gt;{
+    &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; Name { &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;get&lt;/span&gt;; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;set&lt;/span&gt;; }
+    &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; Description { &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;get&lt;/span&gt;; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;set&lt;/span&gt;; }
+}
+&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;class&lt;/span&gt; &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;DataGenerator
+&lt;/span&gt;{
+    &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IEnumerable&lt;/span&gt;&amp;lt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IExample&lt;/span&gt;&amp;gt; GetExamples(&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; categoryName)
+    {&lt;br /&gt;        &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(0,128,0)&quot;&gt;//Context Definition&lt;br /&gt;&lt;/span&gt;        &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IEnumerable&lt;/span&gt;&amp;lt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IExample&lt;/span&gt;&amp;gt; examples =
+            &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;from&lt;/span&gt; x &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;in&lt;/span&gt; db.Examples &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(0,128,0)&quot;&gt;//LINQ to SQL Class&lt;br /&gt;&lt;/span&gt;            &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;where&lt;/span&gt; x.Category.Name = categoryName
+            &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;select&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; IExamples { Name = x.Name&lt;br /&gt;                                 , Description = x.Description } ;
+&lt;span style=&quot;COLOR: rgb(0,128,0)&quot;&gt;            // There is probobly better syntax for this&lt;/span&gt;
+        &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;return&lt;/span&gt; examples;
+    }
+}&lt;/font&gt;&lt;/pre&gt;
+&lt;p&gt;Now I know I could instead do&lt;/p&gt;
+&lt;p&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;class&lt;/span&gt; &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Example&lt;br /&gt; &lt;/span&gt;{&lt;br /&gt;     &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; Name { &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;get&lt;/span&gt;; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;set&lt;/span&gt;; }&lt;br /&gt;     &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; Description { &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;get&lt;/span&gt;; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;set&lt;/span&gt;; }&lt;br /&gt; }&lt;br /&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;class&lt;/span&gt; &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;DataGenerator&lt;br /&gt; &lt;/span&gt;{&lt;br /&gt;     &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IEnumerable&lt;/span&gt;&amp;#x3C;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Example&lt;/span&gt;&gt; GetExamples(&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; categoryName)&lt;br /&gt;     {&lt;br /&gt;         &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(0,128,0)&quot;&gt;//Context Definition&lt;br /&gt; &lt;/span&gt;        &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IEnumerable&lt;/span&gt;&amp;#x3C;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Example&lt;/span&gt;&gt; examples =&lt;br /&gt;             &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;from&lt;/span&gt; x &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;in&lt;/span&gt; db.Examples &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(0,128,0)&quot;&gt;//LINQ to SQL Class, &lt;br /&gt; &lt;/span&gt;            &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;where&lt;/span&gt; x.Category.Name = categoryName&lt;br /&gt;             &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;select&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Example&lt;/span&gt;{ Name = x.Name, Description = x.Description };&lt;/p&gt; &lt;/p&gt;
+&lt;p&gt;
+          &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;return&lt;/span&gt; examples;&lt;br /&gt;     }&lt;br /&gt; }&lt;br /&gt; &lt;/font&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  or if I wanted to continue only exposing an interface
+&lt;/p&gt;
+&lt;p&gt;
+   
+&lt;/p&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;interface&lt;/span&gt; &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IExample
+&lt;/span&gt;{
+    &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; Name { &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;get&lt;/span&gt;; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;set&lt;/span&gt;; }
+    &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; Description { &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;get&lt;/span&gt;; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;set&lt;/span&gt;; }
+}
+&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;internal &lt;/span&gt;&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;class&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Example&lt;/span&gt;:&lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IExample
+&lt;/span&gt;{
+    &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; Name { &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;get&lt;/span&gt;; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;set&lt;/span&gt;; }
+    &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; Description { &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;get&lt;/span&gt;; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;set&lt;/span&gt;; }
+}
+&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;class&lt;/span&gt; &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;DataGenerator
+&lt;/span&gt;{
+    &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IEnumerable&lt;/span&gt;&amp;lt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IExample&lt;/span&gt;&amp;gt; GetExamples(&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; categoryName)
+    {
+        &lt;/font&gt;&lt;font size=&quot;2&quot;&gt;&lt;span style=&quot;COLOR: rgb(0,128,0)&quot;&gt;//LINQ to SQL Context Definition
+&lt;/span&gt;        &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;var&lt;/span&gt; examples =
+            &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;from&lt;/span&gt; x &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;in&lt;/span&gt; db.Examples &lt;br /&gt;&lt;/font&gt;&lt;font size=&quot;2&quot;&gt;            &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;where&lt;/span&gt; x.Category.Name = categoryName
+            &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;select&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Example&lt;/span&gt;{ Name = x.Name&lt;br /&gt;                              , Description = x.Description };
+
+        &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;return&lt;/span&gt; examples.OfType&amp;lt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IExample&lt;/span&gt;&amp;gt;();
+    }
+}&lt;/font&gt;&lt;/pre&gt;
+&lt;p&gt;
+  Over all this isn&amp;#8217;t a big issue since the second method works just fine for what I am trying to accomplish for the most part. But it feels kind of off having to make a throwaway class to accomplish this.
+&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LINQ, Anonymous Types and Interfaces Revisited]]></title><description><![CDATA[After making my  previous post  I worked on it a bit more, and found that the best way to accomplish what I was trying to do, creating quick…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//linq-anonymous-types-and-interfaces-revisited/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//linq-anonymous-types-and-interfaces-revisited/</guid><pubDate>Tue, 11 Dec 2007 23:54:59 GMT</pubDate><content:encoded>&lt;p&gt;After making my &lt;a href=&quot;http://myheadsexploding.com/archive/2007/12/06/anonymous-types-and-interfaces.aspx&quot;&gt;previous post&lt;/a&gt; I worked on it a bit more, and found that the best way to accomplish what I was trying to do, creating quick data layer that I can change later, was to simply add the IExample interface to the partial class definition. I know I can create this with &lt;a href=&quot;http://www.subsonicproject.com&quot;&gt;Subsonic&lt;/a&gt; or another  DAL generator, but currently they aren’t on the list of tech I want to learn at the moment.&lt;/p&gt;
+&lt;p&gt;And while this did work, I ran into an error in the dbmI designer when I clicked “View Code” from the context menu:&lt;/p&gt;
+&lt;p&gt;This seems to happen when the project has a default namespace assigned to it or possibly having an Entity Namespace set, since I have both. I haven’t looked to much into it since VS puts the partial class definition that it goes to in the cs file of the same name as the dbml file, so I doubt I will be using the view code much anyway.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HttpHandlers and directory authentication/HttpModules]]></title><description><![CDATA[I decided to implement   Admin Rss Feeds  after a particularly draining Friday. For the most part it went pretty smoothly, and learned…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//httphandlers-and-directory-authenticationhttpmodules/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//httphandlers-and-directory-authenticationhttpmodules/</guid><pubDate>Wed, 19 Sep 2007 22:09:57 GMT</pubDate><content:encoded>&lt;p&gt;I decided to implement  &lt;a href=&quot;http://sourceforge.net/tracker/index.php?func=detail&amp;#x26;aid=1202588&amp;#x26;group_id=137896&amp;#x26;atid=739982&quot;&gt;Admin Rss Feeds&lt;/a&gt; after a particularly draining Friday. For the most part it went pretty smoothly, and learned something about working with a different team too ;). I Implemented an HttpModule that looked for FormsAuthentication redirects for rss feeds and changed it over to use basic authentication so rss readers could authenticate. &lt;/p&gt;
+&lt;p&gt;And for a while all was good. In fact other then unit tests I had thought I was done.&lt;/p&gt;
+&lt;p&gt;Then just to be thorough I set up several subfolder blogs off of localhost, and everything stopped working. &lt;strike&gt;Apparently something in the way that the rss HttpHandlers in Subtext are called skips all of the HttpModules set up in the web.config. I have a fix for this, I loop through all of the modules in the application and initialize them.&lt;/strike&gt; I dont think this is the right solution since it also stops the &lt;authorization&gt; section in the /Admin folder is not being looked at either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Subtext Admin Rss Feeds]]></title><description><![CDATA[I just committed the changes to provide 3 administrative rss feeds: Comments Needing Moderation Referrals Errors The change also uses the…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//subtext-admin-rss-feeds/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//subtext-admin-rss-feeds/</guid><pubDate>Wed, 19 Sep 2007 01:51:43 GMT</pubDate><content:encoded>&lt;p&gt;I just committed the changes to provide 3 administrative rss feeds:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Comments Needing Moderation&lt;/li&gt;
+&lt;li&gt;Referrals&lt;/li&gt;
+&lt;li&gt;Errors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The change also uses the HttpModule that will convert forms authentication into basic authentication so that the feeds can be viewed in an Rss reader. After seeing &lt;a href=&quot;http://msdn2.microsoft.com/en-us/library/Aa479391.aspx&quot; title=&quot;http://msdn2.microsoft.com/en-us/library/Aa479391.aspx&quot;&gt;http://msdn2.microsoft.com/en-us/library/Aa479391.aspx&lt;/a&gt; I had thought about changing over to use it instead of the simple module I wrote. I decided not to however because it would have meshed well with Subtexts security model. &lt;/p&gt;
+&lt;p&gt;This was one of the more interesting things I have worked on in a while, though I am already thinking of several improvements that could be made (in the next version). These include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A module for digest authentication.&lt;/li&gt;
+&lt;li&gt;A Configuration section for the new authentication modules to allow them to work with other file times outside of rss feeds.&lt;/li&gt;
+&lt;li&gt;A rework of the way that rss writers are done. Currently a new one needs to be added, along with a HttpHandler when a feed is going to serve up a new object type. It would be nice to be able to configure the feeds using the web.config or setting stored in database to be able to create feeds on any available subtext object collection.&lt;/li&gt;
+&lt;li&gt;Something seems off with the Error feed’s times. I think the local time is being stored without converting it to UTC or specifying a timezone.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[HttpHandlers and web.config settings]]></title><description><![CDATA[I figured out what was happening in my  previous post . It makes a bit more sense now that I have seen it, being able to just stop working…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//httphandlers-and-web-config-settings/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//httphandlers-and-web-config-settings/</guid><pubDate>Sun, 16 Sep 2007 18:28:36 GMT</pubDate><content:encoded>&lt;p&gt;I figured out what was happening in my &lt;a href=&quot;http://myheadsexploding.com/archive/2007/09/16/httphandlers-and-directory-authenticationhttpmodules.aspx&quot; title=&quot;HttpHandlers and directory authentication/HttpModules&quot;&gt;previous post&lt;/a&gt;. It makes a bit more sense now that I have seen it, being able to just stop working on something is handy, basically the Rss feeds don’t do URL rewriting. So the call to /test1/Admin/ModeratedCommentRss.aspx uses the /web.config and would use the /test1/Admin/web.config, but it has no reason to look at the /Admin/web.config. &lt;/p&gt;
+&lt;p&gt;Not completely sure how I should change this. Right now I have the ModeratedCommentRss.aspx checking to see if the requestor is an Admin, and if not it calls FormsAuthentication.RedirectToLoginPage(). This works, but I would rather a solution that didn’t involve people needing to know to put the check in.&lt;/p&gt;
+&lt;p&gt;I also found this module helpful when I was figuring out where to do the conversion:  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre class=&quot;code&quot;&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;class&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;DebugModule&lt;/span&gt;:System.Web.&lt;/font&gt;&lt;font size=&quot;1&quot;&gt;&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;IHttpModule
+&lt;/span&gt;{
+  &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;EventHandler&lt;/span&gt; GetEventhandler(&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;string&lt;/span&gt; name)
+   {
+       &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;return&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;new&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;EventHandler&lt;/span&gt;(&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;delegate&lt;/span&gt;(&lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;object&lt;/span&gt; sender, &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;EventArgs&lt;/span&gt; e)
+       {
+           &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;HttpApplication&lt;/span&gt; app = (&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;HttpApplication&lt;/span&gt;)sender;
+           &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;HttpContext&lt;/span&gt; context = app.Context;
+           &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;if&lt;/span&gt; (context != &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;null&lt;/span&gt;)
+               &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Debug&lt;/span&gt;.WriteIf(context.Response.StatusCode == 302, &lt;span style=&quot;COLOR: rgb(163,21,21)&quot;&gt;&quot;Redirecting - &quot;&lt;/span&gt;);
+           &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Debug&lt;/span&gt;.WriteLine(name);
+       });
+   }
+
+   &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;public&lt;/span&gt; &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;void&lt;/span&gt; Init(&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;HttpApplication&lt;/span&gt; app)
+   {
+
+       &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Debug&lt;/span&gt;.WriteLine(&lt;span style=&quot;COLOR: rgb(163,21,21)&quot;&gt;&quot;---------------------------------&quot;&lt;/span&gt;);
+       &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Debug&lt;/span&gt;.WriteLine(&lt;span style=&quot;COLOR: rgb(163,21,21)&quot;&gt;&quot;Module Init&quot;&lt;/span&gt;);
+       &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;Type&lt;/span&gt; appType = app.GetType();
+       &lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;EventInfo&lt;/span&gt;[] events = appType.GetEvents();
+       &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;foreach&lt;/span&gt; (&lt;span style=&quot;COLOR: rgb(43,145,175)&quot;&gt;EventInfo&lt;/span&gt; eventInfo &lt;span style=&quot;COLOR: rgb(0,0,255)&quot;&gt;in&lt;/span&gt; events)
+       {
+           eventInfo.AddEventHandler(app, GetEventhandler(eventInfo.Name));
+       }
+   }
+}&lt;/font&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://11011.net/software/vspaste&quot;&gt;&lt;/a&gt;I used that class and a small test web project to figure out how to change the FormsAuthentication over to Basic authentication (seems like mixed authentication should have already been there though). &lt;/p&gt;
+&lt;p&gt;Of course shortly after I figured most of it out I saw the link to the MSDN article &lt;a href=&quot;http://haacked.com/&quot;&gt;Phil Haack&lt;/a&gt; had posted for the feature request.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Blog Alias Recap]]></title><description><![CDATA[Well the blog alias feature is in, and the self spam in my referral section has reduced significantly since I started using it last night…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//blog-alias-recap/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//blog-alias-recap/</guid><pubDate>Wed, 12 Sep 2007 03:08:41 GMT</pubDate><content:encoded>&lt;p&gt;Well the blog alias feature is in, and the self spam in my referral section has reduced significantly since I started using it last night. Its also nice not seeing Google and Yahoo spidering my blog on 4 different domains (still don’t know how they got 2 of them).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How To Use&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Blog edit screen has a list all the domain aliases, and a button to add a new alias.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If an alias is found, redirects request to the associated blog.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aliases can be at both the host and subfolder level.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Requests are validated against blogs first, so if there is only one blog with a give host name then subfolder aliases would not work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Lessons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.wekeroad.com/&quot;&gt;Rob Conery&lt;/a&gt; is for the most part right &lt;a href=&quot;http://blog.wekeroad.com/2007/09/04/in-which-we-discuss-digital-gearheads-and-geek-mastery/&quot;&gt;about the provider model&lt;/a&gt;. Having both a data provider and an object provider with wrapper objects over that on top of that seemed to be a little overkill. But even so, figuring out where to put the changes was one of the more enjoyable parts of the change, which was paid for when I implemented the change. I also learned that it is better then the way we do it at work (think really big Page_Load functions).&lt;/li&gt;
+&lt;li&gt;I still don’t care much post backs, especially after a pseudo-AJAX/JavaScript framework at work since .Net 1.0. They aren’t as bad as I remembered them being, but the refresh popup when navigating is annoying.&lt;/li&gt;
+&lt;li&gt;Seeing a message appear in my email about the build being broken within 30 minutes of committing is somewhat disheartening. Thankfully it wasn’t my code, though it did make me look at aggregate blogs which I had missed when testing.&lt;/li&gt;
+&lt;li&gt;That I learned far more from making changes to the code then I would have from just reading through it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Areas for improvement&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The formatting of the host admin page could likely be improved some.&lt;/li&gt;
+&lt;li&gt;Possibly add more validation to prevent overlap of aliases between blogs.&lt;/li&gt;
+&lt;li&gt;The requests seem a little bit chatty with the database, looks to be something with the lookup for cookie paths.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;What’s Next&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Eyeing &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://sourceforge.net/tracker/index.php?func=detail&amp;#x26;aid=1552078&amp;#x26;group_id=137896&amp;#x26;atid=739982&quot;&gt;Excerpt feature&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sourceforge.net/tracker/index.php?func=detail&amp;#x26;aid=1467885&amp;#x26;group_id=137896&amp;#x26;atid=739979&quot;&gt;Changing subfolder breaking pictures&lt;/a&gt;, possibly using the blog aliases to allow for links to be maintained.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sourceforge.net/tracker/index.php?func=detail&amp;#x26;aid=1724885&amp;#x26;group_id=137896&amp;#x26;atid=739979&quot;&gt;Image not defined error in galleries&lt;/a&gt; – have had this happen&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sourceforge.net/tracker/index.php?func=detail&amp;#x26;aid=1740335&amp;#x26;group_id=137896&amp;#x26;atid=739982&quot;&gt;Easier affiliate ID integration&lt;/a&gt; – add a set of options that can autopopulate the Sitewide Tracking code surrounded by generated marker comment tags to allow additional code to work. And possibly something to make the amazon links.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Looking around for a project that uses WCF to learn from.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Committing to subtext, blog/domain aliases]]></title><description><![CDATA[Well, I got my first major feature for  Subtext  done, blog/domain aliases for the blog, but I find myself hesitant to click commit. Its not…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//committing-to-subtext-blogdomain-aliases/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//committing-to-subtext-blogdomain-aliases/</guid><pubDate>Mon, 10 Sep 2007 02:23:17 GMT</pubDate><content:encoded>&lt;p&gt;Well, I got my first major feature for &lt;a href=&quot;http://subtextproject.com/&quot;&gt;Subtext&lt;/a&gt; done, blog/domain aliases for the blog, but I find myself hesitant to click commit. Its not that I doubt it works, it is currently running on my blog right now. I just don’t feel comfortable checking in code that I can’t respond to problems with for about 19 hours, and would hate to really foobar stuff so soon after getting commit access ;).&lt;/p&gt;
+&lt;p&gt;After I do check it in, something along the lines this will be showing in the host admin:&lt;/p&gt;
+&lt;p&gt;This works a lot like the www prefix currently does.&lt;/p&gt;
+&lt;p&gt;So I’ve decided to wait till tomorrow after work to commit. Will likely type of some what I learned type of post too, mostly to get in the habit.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[I wish C# 3.0 was here already]]></title><description><![CDATA[I was reading  IHttpContext And Other Interfaces For Your Duck Typing Benefit  over on  Haacked . It reminded my of something I did Thursday…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//i-wish-c-3-0-was-here-already/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//i-wish-c-3-0-was-here-already/</guid><pubDate>Mon, 10 Sep 2007 02:18:09 GMT</pubDate><content:encoded>&lt;p&gt;I was reading &lt;a href=&quot;http://haacked.com/archive/2007/09/09/ihttpcontext-and-other-interfaces-for-your-duck-typing-benefit.aspx&quot; title=&quot;IHttpContext And Other Interfaces For Your Duck Typing Benefit&quot;&gt;IHttpContext And Other Interfaces For Your Duck Typing Benefit&lt;/a&gt; over on &lt;a href=&quot;http://www.haacked.com&quot;&gt;Haacked&lt;/a&gt;. It reminded my of something I did Thursday, which made me wish that .Net 3.5 was already usable.&lt;/p&gt;
+&lt;p&gt;I actually finally convinced my boss to let me try to automate at least some of the testing. So first order of business, change our the SQL installer program we use to allow it run without user interaction. &lt;/p&gt;
+&lt;p&gt;After a good amount of refactoring of the monolithic control function, I get that part working. It can now do everything it needs to do by passing in all the stuff I need on the command line. After answering some several questions from the junior developers, several of which they answered them selves during the course of the conversation, I start to move onto making it into something useful.&lt;/p&gt;
+&lt;p&gt;I decide to make a simple API that I could use to inside of programs, so I can make a quick proof of concept for my boss who is skeptical that it would be feasible to make tests for the SQL (business logic). Something along the lines of here are your options, start and let me know how it went. That’s when the fun started, its a single executable file and “needs” to stay that way (which I agree with overall). After my momentary amnesia about not being able to reference exe files, I decide that I am going to use reflection.&lt;/p&gt;
+&lt;p&gt;My first attempt went something like: &lt;/p&gt; &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre class=&quot;csharpcode&quot;&gt;//The installer has a start method
+interface IInstaller{void Start();} 
+public IInstaller Bind()
+{
+	Assembly assembly = Assembly.LoadFile(&quot;&amp;lt;Path&amp;gt;&quot;);
+	Type type = assembly.GetType(&quot;namespace.frm&quot;);
+	ConstructorInfo constructorInfo = type.GetConstructor(new Type[]{});
+	IInstaller installer = (IInstaller)constructorInfo.Invoke(new object[]{});
+}
+&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That didnt work so well, since while namespace.frm object had a Start method, it wasn’t from that interface, and shared no assemblies in common that I could use an interface from. In the end I decided to make a wrapper class that would take the object and make use a delegate to keep a reference to the Start method.&lt;/p&gt;
+&lt;p&gt;Something close to this: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;pre class=&quot;csharpcode&quot;&gt;public interface IInstaller{void Start();}
+public class InstallerWrapper:IInstaller
+{
+	private delegate void StartMethod();
+	StartMethod startDelegate;
+	object _installer;
+	public InstallerWrapper(object installer)
+	{
+		_installer = installer;
+		startDelegate = (StartMethod)Delegate.CreateDelegate(typeof(StartMethod), installer, &gt;&quot;Start&quot;);
+	}
+	public void Start()
+	{
+		startDelegate();	
+	}	
+}
+public IInstaller Bind()
+{
+	Assembly assembly = Assembly.LoadFile(&quot;&amp;lt;Path&amp;gt;&quot;);
+	Type type = assembly.GetType(&quot;namespace.frm&quot;);
+	ConstructorInfo constructorInfo = type.GetConstructor(new Type[]{});
+	return new InstallerWrapper(constructorInfo.Invoke(new object[]{}));
+}
+&lt;/blockquote&gt;
+&lt;/pre&gt;
+&lt;p&gt;Thinking about what I have read about the implementation of it in C# 3.0 I would likely have needed to do it this way anyways, since atleast from what I have read it is a compile time feature. Haven’t tested it yet on my VS 2008 beta VM yet though, so I could be wrong. &lt;/p&gt;
+&lt;p&gt;Oh, and please forgive the formatting of the code, haven’t done it much yet.&lt;/p&gt;</content:encoded></item></channel></rss>
