@@ -9,7 +9,7 @@ permalink: /initial-thoughts-on-microsoft-mvc/
 categories:
   - .Net
   - Development
-published: false
+published: true
 ---
 My first thought is, I really wish I could use this at work, but it is working nicely so far for my rewrite of my web site. Writing Classic ASP style again is taking a little getting used to again though, the visual preview from the designers made styling the page a lot nicer. 
 

@@ -10,7 +10,7 @@ categories:
   - .Net
   - Subtext
 ---
-I figured out what was happening in my [previous post](http://myheadsexploding.com/archive/2007/09/16/httphandlers-and-directory-authenticationhttpmodules.aspx "HttpHandlers and directory authentication/HttpModules"). It makes a bit more sense now that I have seen it, being able to just stop working on something is handy, basically the Rss feeds don&#8217;t do URL rewriting. So the call to /test1/Admin/ModeratedCommentRss.aspx uses the /web.config and would use the /test1/Admin/web.config, but it has no reason to look at the /Admin/web.config. 
+I figured out what was happening in my [previous post](/httphandlers-and-directory-authenticationhttpmodules "HttpHandlers and directory authentication/HttpModules"). It makes a bit more sense now that I have seen it, being able to just stop working on something is handy, basically the Rss feeds don&#8217;t do URL rewriting. So the call to /test1/Admin/ModeratedCommentRss.aspx uses the /web.config and would use the /test1/Admin/web.config, but it has no reason to look at the /Admin/web.config. 
 
 Not completely sure how I should change this. Right now I have the ModeratedCommentRss.aspx checking to see if the requestor is an Admin, and if not it calls FormsAuthentication.RedirectToLoginPage(). This works, but I would rather a solution that didn&#8217;t involve people needing to know to put the check in.
 
