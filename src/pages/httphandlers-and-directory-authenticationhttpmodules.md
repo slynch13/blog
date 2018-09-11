@@ -10,6 +10,7 @@ categories:
   - .Net
   - Development
   - Subtext
+published: true
 ---
 I decided to implement  [Admin Rss Feeds](http://sourceforge.net/tracker/index.php?func=detail&aid=1202588&group_id=137896&atid=739982) after a particularly draining Friday. For the most part it went pretty smoothly, and learned something about working with a different team too ;). I Implemented an HttpModule that looked for FormsAuthentication redirects for rss feeds and changed it over to use basic authentication so rss readers could authenticate. 
 

@@ -10,7 +10,8 @@ categories:
   - .Net
   - Development
   - MS Mvc
-published: false
+published: true
+frontpage: true
 ---
 I have been following <a href="http://blog.wekeroad.com/" target="_blank">Rob Conery's</a> posts on the MVC Storefront, and trying the repository/pipes-filters for data access that he has been using.
 
