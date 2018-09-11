@@ -2,7 +2,6 @@ FROM node as build
 
 COPY ./* ./app/
 COPY ./src ./app/src
-COPY ./public ./app/public
 COPY ./static ./app/static
 WORKDIR /app
 
